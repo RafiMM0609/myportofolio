@@ -1,0 +1,248 @@
+/* Clean Professional Design Components */
+
+/* Professional Badges */
+.professional-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.professional-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.professional-badge .badge-icon {
+  font-size: 14px;
+}
+
+/* Professional LinkedIn Button */
+.professional-linkedin-button {
+  background: linear-gradient(135deg, #0077b5 0%, #005582 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 3px 12px rgba(0, 119, 181, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.professional-linkedin-button:hover {
+  background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 119, 181, 0.4);
+  color: white;
+}
+
+.professional-linkedin-button svg {
+  fill: currentColor;
+}
+
+/* Clean Skill Cards */
+.clean-skill-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.clean-skill-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.skill-emoji {
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #374151;
+  margin: 0;
+}
+
+.skill-list-clean {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list-clean li {
+  font-size: 14px;
+  color: #6b7280;
+  padding: 6px 0;
+  border-bottom: 1px solid #f3f4f6;
+  transition: color 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.skill-list-clean li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.skill-list-clean li:hover {
+  color: #374151;
+}
+
+/* Clean Timeline */
+.clean-timeline-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.clean-timeline-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.timeline-date {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.timeline-date.current {
+  background: linear-gradient(135deg, #10b981, #059669);
+  animation: pulse-soft 2s infinite;
+}
+
+.timeline-position {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 6px 0;
+}
+
+.timeline-company {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+  font-style: italic;
+}
+
+.timeline-desc {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1));
+  color: #3b82f6;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Soft pulse animation */
+@keyframes pulse-soft {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clean-skill-card {
+    padding: 16px;
+  }
+  
+  .clean-timeline-item {
+    padding: 16px;
+  }
+  
+  .timeline-position {
+    font-size: 16px;
+  }
+  
+  .professional-badge {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .professional-linkedin-button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-header {
+    gap: 8px;
+  }
+  
+  .skill-emoji {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+  
+  .skill-title {
+    font-size: 14px;
+  }
+  
+  .timeline-skills {
+    gap: 4px;
+  }
+  
+  .skill-tag {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+}
